@@ -5,6 +5,8 @@
     font-size: 15px;
 }
 
+/* MOBILE FIRST*/
+
 /* background */
 
 #bg-pattern-m1{
@@ -86,9 +88,6 @@ header p {
     background-color: hsl(300, 43%, 22%);
     margin: 0 15px 15px;
     border-radius: 8px;
-}
-
-.feedback {
     padding: 30px;
 }
 
@@ -129,3 +128,54 @@ header p {
     text-align: center;
 }
 
+/* media screen 1440px*/
+
+@media screen and (min-width: 1440px) {
+    .bg-pattern-m {
+        display: none;
+    }
+    .bg-pattern-d{
+        display: block;
+    }
+    #bg-pattern-d1 {
+        position: absolute;
+        top: 0;
+    }
+    #bg-pattern-d2 {
+        position: absolute;
+        bottom: 0;
+    }
+
+    body {
+        width: 80vw;
+        margin: auto;
+    }
+
+    #top-desktop {
+        display: flex;
+    }
+
+    
+
+
+
+
+    .feedback-section {
+        display: flex;
+        height: 275px;
+    }
+
+    .feedback:nth-child(2) {
+        align-self: center;
+    }
+
+    .feedback:nth-child(3) {
+        align-self: flex-end;
+    }
+
+    .feedback {
+        height: 170px;
+        justify-content: space-evenly;
+    }
+
+}
