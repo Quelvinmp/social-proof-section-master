@@ -77,12 +77,55 @@ header p {
     letter-spacing: 1px;
 }
 
+/* feedbacks */
+
+.feedback {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: hsl(300, 43%, 22%);
+    margin: 0 15px 15px;
+    border-radius: 8px;
+}
+
+.feedback {
+    padding: 30px;
+}
+
+.info-feedback {
+    display: flex;
+    width: 100%;
+    justify-content:left;
+    margin-bottom: 20px;
+}
+
+.feedback img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+
+.name, .comment {
+    color: white;
+    font-weight: 600;
+    line-height: 20px;
+}
+
+.status {
+    color: hsl(333, 80%, 67%);
+    margin-top: 3px;
+}
+
 /* footer */
 
-.attribution {
-  font-size: 11px;
-  text-align: center;
-}
 .attribution a {
   color: hsl(228, 45%, 44%);
 }
+
+.links {
+    font-size: 11px;
+    margin: 3px;
+    text-align: center;
+}
+
