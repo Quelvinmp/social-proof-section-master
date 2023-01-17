@@ -47,6 +47,38 @@ header p {
 
 /* rate section */
 
+.rate-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 20px 30px;
+}
+
+.star {
+    margin: 0 5px 15px;
+}
+
+.rates {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: hsl(300, 24%, 96%);
+    border-radius: 6px;
+    width: 100%;
+    margin-bottom: 10px;
+    height: 75px;
+    justify-content: center;
+}
+
+.rates p {
+    font-weight: 700;
+    color: hsl(300, 43%, 22%);
+    font-size: 17px;
+    letter-spacing: 1px;
+}
+
+/* footer */
+
 .attribution {
   font-size: 11px;
   text-align: center;
