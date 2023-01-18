@@ -28,7 +28,6 @@
 .header {
     display: flex;
     flex-direction: column;
-    /* margin: 70px 20px 30px; */
     padding: 70px 10px 30px;
     text-align: center;
 }
@@ -57,7 +56,7 @@ header p {
 }
 
 .star {
-    margin: 0 5px 15px;
+    margin: 0 2px 15px;
 }
 
 .rates {
@@ -131,6 +130,10 @@ header p {
 /* media screen 1440px*/
 
 @media screen and (min-width: 1440px) {
+    * {
+        box-sizing: border-box;
+    }
+
     .bg-pattern-m {
         display: none;
     }
@@ -144,25 +147,95 @@ header p {
     #bg-pattern-d2 {
         position: absolute;
         bottom: 0;
+        width: 800px;
+        height: 600px;
     }
 
     body {
-        width: 80vw;
-        margin: auto;
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    main {
+        width: 80%;
+        height: 90%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
     }
 
     #top-desktop {
         display: flex;
+        justify-content: space-between;
+        margin-bottom: 25px;
     }
 
+    .header {
+        text-align: left;
+        width: 50%;
+        padding: 0 150px 0 0;
+        box-sizing: border-box;
+    }
     
+    header h1 {
+        font-size: 50px;
+        color: hsl(300, 43%, 22%);
+    }
+    
+    header p {
+        font-weight: 700;
+        font-size: 15px;
+        line-height: 20px;
+        color:hsl(303, 10%, 53%);
+        margin:15px;
+    }
+
+    .rate-container {
+        width: 50%;
+        gap: 15px;
+    }
+
+    .rates:nth-child(1) {
+        align-self: flex-start;
+    }
+
+    .rates:nth-child(2) {
+        align-self: center;
+    }
+
+    .rates:nth-child(3) {
+        align-self: flex-end;
+    }
+
+    .rates {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        background-color: hsl(300, 24%, 96%);
+        border-radius: 6px;
+        width: 80%;
+        margin-bottom: 10px;
+        height: 60px;
+        align-content: center;
+        justify-content: space-evenly;
+    }
+
+    .rates p {
+        margin-right: 30px;
+    }
 
 
-
+    .star {
+        margin: auto auto;
+    }
 
     .feedback-section {
         display: flex;
-        height: 275px;
+        height: 290px;
     }
 
     .feedback:nth-child(2) {
@@ -174,8 +247,15 @@ header p {
     }
 
     .feedback {
-        height: 170px;
+        height: 230px;
         justify-content: space-evenly;
+    }
+
+    .attribution {
+        position: absolute;
+        bottom: 0;
+        right: 40%;
+        left: 40%;
     }
 
 }
